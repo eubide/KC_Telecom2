@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `CLIENTES`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `CLIENTES` (
-  `CUSTOMER_ID` varchar(512) DEFAULT NULL,
+  `CUSTOMER_ID` varchar(512) NOT NULL,
   `FIRST_NAME` varchar(512) DEFAULT NULL,
   `LAST_NAME` varchar(512) DEFAULT NULL,
   `IDENTIFIED_DOC` varchar(512) DEFAULT NULL,
@@ -37,7 +37,8 @@ CREATE TABLE `CLIENTES` (
   `EMAIL` varchar(512) DEFAULT NULL,
   `BIRTHDAY` varchar(512) DEFAULT NULL,
   `PROFESION` varchar(512) DEFAULT NULL,
-  `COMPANY` varchar(512) DEFAULT NULL
+  `COMPANY` varchar(512) DEFAULT NULL,
+  PRIMARY KEY (`CUSTOMER_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -63,4 +64,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-28  2:41:07
+-- Dump completed on 2017-12-02 14:49:28
